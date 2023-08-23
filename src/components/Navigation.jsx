@@ -1,23 +1,14 @@
 import React from 'react';
-import { useState } from 'react';
 
-function Navigation() {
-    const [ selected, setSelected ] = useState('about');
-
-    const handleNavClick = (section) => {
-        setSelected(section);
-        const element = document.getElementById(section);
-        element.scrollIntoView({ behavior: 'smooth' });
-
-    }
-    return (
-        <nav>
+function Navigation({ selectedSection, onNavClick }) {
+  return (
+    <nav>
       <ul>
         <li>
           <a
-            href="#about"
-            onClick={() => handleNavClick('about')}
-            className={selected === 'about' ? 'selected' : ''}
+            href="#home"
+            onClick={() => onNavClick('home')}
+            className={selectedSection === 'home' ? 'selected' : ''}
           >
             About Me
           </a>
@@ -25,8 +16,8 @@ function Navigation() {
         <li>
           <a
             href="#portfolio"
-            onClick={() => handleNavClick('portfolio')}
-            className={selected === 'portfolio' ? 'selected' : ''}
+            onClick={() => onNavClick('portfolio')}
+            className={selectedSection === 'portfolio' ? 'selected' : ''}
           >
             Portfolio
           </a>
@@ -34,8 +25,8 @@ function Navigation() {
         <li>
           <a
             href="#contact"
-            onClick={() => handleNavClick('contact')}
-            className={selected === 'contact' ? 'selected' : ''}
+            onClick={() => onNavClick('contact')}
+            className={selectedSection === 'contact' ? 'selected' : ''}
           >
             Contact
           </a>
@@ -43,15 +34,15 @@ function Navigation() {
         <li>
           <a
             href="#resume"
-            onClick={() => handleNavClick('resume')}
-            className={selected === 'resume' ? 'selected' : ''}
+            onClick={() => onNavClick('resume')}
+            className={selectedSection === 'resume' ? 'selected' : ''}
           >
             Resume
           </a>
         </li>
       </ul>
     </nav>
-    );
+  );
 }
 
 export default Navigation;

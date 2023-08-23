@@ -2,11 +2,11 @@ import React from 'react';
 import Navigation from './Navigation';
 import './styles.css';
 
-function Header() {
+function Header({ selectedSection, onNavClick }) {
     return (
         <header>
             <h1>Shane Browning</h1>
-            <Navigation />
+            <Navigation selectedSection={selectedSection} onNavClick={onNavClick} />
         </header>
     );
 }
