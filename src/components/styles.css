@@ -8,6 +8,10 @@ header {
     align-items: center;
 }
 
+.section h2 {
+  margin-top: 1rem;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -48,7 +52,8 @@ section {
   flex-direction: column; 
 }
 
-.selected {
+.selected,
+#contact {
   background-color: #dad7cd;
 }
 
@@ -77,7 +82,50 @@ section {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem; /* Adjust gap between projects */
+  gap: 4rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.submit-button {
+  background-color: #a3b18a;
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #7c8a62;
 }
 
 /* Media query */
