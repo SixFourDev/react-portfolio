@@ -8,11 +8,15 @@ function ProjectTile({ project }) {
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <div className="project-links">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
           <a href={project.deployed} target="_blank" rel="noopener noreferrer">
             Deployed App
+          </a>
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <img
+              src='./assets/images/github-mark-white.png'
+              alt={`GitHub Repo: ${project.title}`}
+              className="github-logo"
+            />
           </a>
         </div>
       </div>

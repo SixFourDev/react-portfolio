@@ -69,6 +69,17 @@ section {
   line-height: 1.6;
 }
 
+.portfolio-section {
+  background-color: #dad7cd;
+  padding: 10rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem; /* Adjust gap between projects */
+}
+
 /* Media query */
 @media (max-width: 768px) {
     header {
@@ -87,6 +98,10 @@ section {
     }
 
     .about-content {
+      grid-template-columns: 1fr;
+    }
+
+    .project-grid {
       grid-template-columns: 1fr;
     }
   }

@@ -4,7 +4,7 @@ import projectData from '../data/projectData';
 
 function Portfolio() {
   return (
-    <section id="portfolio">
+    <section className='portfolio-section' id="portfolio">
       <h2>Portfolio</h2>
       <div className="project-grid">
         {projectData.map((project, index) => (
