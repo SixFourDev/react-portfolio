@@ -1,3 +1,13 @@
+body,
+.main-content {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
 header {
     background-color: #a3b18a;
     border-radius: 5px;
@@ -6,10 +16,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.section h2 {
-  margin-top: 1rem;
 }
 
 nav ul {
@@ -39,21 +45,23 @@ nav a:hover {
     color: white;
 }
 
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
 section {
-  padding: 12rem; 
+  padding: 2rem; 
   border-radius: 5px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   display: flex; 
-  flex-direction: column; 
+  flex-direction: column;
+  align-items: center; 
 }
 
-.selected,
-#contact {
+.pfp {
+  max-width: 60%;
+  border-radius: 5%;
+  border: 2px solid #a3b18a;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
   background-color: #dad7cd;
 }
 
@@ -62,6 +70,11 @@ section {
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   align-items: center;
+}
+
+.about-image {
+  max-width: 100%;
+  text-align: center;
 }
 
 .profile-img {
@@ -76,7 +89,6 @@ section {
 
 .portfolio-section {
   background-color: #dad7cd;
-  padding: 10rem;
 }
 
 .project-grid {
@@ -85,9 +97,16 @@ section {
   gap: 4rem;
 }
 
-.contact-form {
+.contact-section {
+  padding: 4rem 0; /* Adjust the top and bottom padding as needed */
+  background-color: #dad7cd;
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.contact-form {
+  width: 100%; /* Make the form take up the full width */
   max-width: 500px;
   margin: 0 auto;
 }
@@ -129,8 +148,8 @@ textarea {
 }
 
 .project-image {
-  max-width: 100%; /* Adjust this value as needed */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
   width: 100%;
 }
 
