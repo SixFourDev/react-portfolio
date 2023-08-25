@@ -18,7 +18,7 @@ const projectData = [
       description: 'The State Reviewer is a web application that allows users to review and share their experiences about different states in the United States. Users can sign up or log in to access the dashboard, where they can view existing reviews and add their own reviews for specific states.',
       image: TheStateReviewer,
       github: 'https://github.com/linuscth/TheStateReviewer',
-      deployed: 'https://state-reviewer-13d02081992c.herokuapp.com/',
+      deployed: 'https://secret-spire-22383-527715116975.herokuapp.com/',
     },
     {
       title: 'PWA Text Editor',
