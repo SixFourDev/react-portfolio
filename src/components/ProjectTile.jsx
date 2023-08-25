@@ -1,4 +1,5 @@
 import React from 'react';
+import markwhite from '../assets/images/github-mark-white.png'
 
 function ProjectTile({ project }) {
   return (
@@ -13,7 +14,7 @@ function ProjectTile({ project }) {
           </a>
           <a href={project.github} target="_blank" rel="noopener noreferrer">
             <img
-              src='./assets/images/github-mark-white.png'
+              src={markwhite}
               alt={`GitHub Repo: ${project.title}`}
               className="github-logo"
             />
