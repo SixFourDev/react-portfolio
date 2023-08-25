@@ -4,7 +4,12 @@ import markwhite from '../assets/images/github-mark-white.png'
 function ProjectTile({ project }) {
   return (
     <div className="project-tile">
-      <img src={project.image} alt={project.title} />
+      <img 
+      src={project.image} 
+      alt={project.title} 
+      className='project-image'
+      
+      />
       <div className="overlay">
         <h3>{project.title}</h3>
         <p>{project.description}</p>

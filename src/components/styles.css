@@ -128,6 +128,17 @@ textarea {
   background-color: #7c8a62;
 }
 
+.project-image {
+  max-width: 100%; /* Adjust this value as needed */
+  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+}
+
+.github-logo {
+  max-width: 30px;
+  height: auto;
+}
+
 /* Media query */
 @media (max-width: 768px) {
     header {

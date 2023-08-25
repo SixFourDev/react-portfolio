@@ -1,7 +1,8 @@
 import CookersCompanion from '../assets/images/cookers-companion.png'
 import TheStateReviewer from '../assets/images/state-reviewer.png'
-import PWA from '../assets/images/pwa-text-editor.png'
-import WeatherDashboard from '../assets/images/weather-dashboard.png'
+import PWA from '../assets/images/pwa-text-editor2.png'
+import SNA from '../assets/images/social-network-api.png'
+import WeatherDashboard from '../assets/images/weather-dashboard2.png'
 import EmployeeTracker from '../assets/images/employee-tracker.png'
 
 const projectData = [
@@ -29,7 +30,7 @@ const projectData = [
     {
       title: 'Social Network API',
       description: 'The Social Network API is a backend application that allows users to create, manage, and interact with thoughts and friends. Users can create accounts, post thoughts, add friends, and react to thoughts. This API is built using Node.js, Express, and MongoDB.',
-      // image: 'path/to/project4-image.jpg',
+      image: SNA,
       github: 'https://github.com/SixFourDev/social-network-api',
       deployed: 'Deployed link for Project 4',
     },
