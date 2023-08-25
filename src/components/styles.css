@@ -139,6 +139,39 @@ textarea {
   height: auto;
 }
 
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-app-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-image-container:hover .project-image {
+  transform: scale(1.05);
+  filter: brightness(70%);
+}
+
+.project-image-container:hover .view-app-text {
+  opacity: 1;
+}
+
 /* Media query */
 @media (max-width: 768px) {
     header {

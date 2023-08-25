@@ -22,17 +22,17 @@ const projectData = [
     },
     {
       title: 'PWA Text Editor',
-      description: 'This Progressive Web Application (PWA) is a simple Text Editor. Enjoy ease of use accessibility with offline capabilities and reliable data persistence with IndexedDB integration.',
+      description: 'This Progressive Web Application (PWA) is a simple Text Editor. Enjoy ease of use accessibility with offline capabilities and reliable data persistence with IndexedDB integration. Since this is a back-end application. please visit the Github and clone the repo to test.',
       image: PWA,
       github: 'https://github.com/SixFourDev/pwa-text-editor',
-      deployed: 'Deployed link for Project 3',
+      deployed: 'https://github.com/SixFourDev/pwa-text-editor',
     },
     {
       title: 'Social Network API',
-      description: 'The Social Network API is a backend application that allows users to create, manage, and interact with thoughts and friends. Users can create accounts, post thoughts, add friends, and react to thoughts. This API is built using Node.js, Express, and MongoDB.',
+      description: 'The Social Network API is a backend application that allows users to create, manage, and interact with thoughts and friends. Users can create accounts, post thoughts, add friends, and react to thoughts. This API is built using Node.js, Express, and MongoDB. Since this is a back-end application. please visit the Github and clone the repo to test.',
       image: SNA,
       github: 'https://github.com/SixFourDev/social-network-api',
-      deployed: 'Deployed link for Project 4',
+      deployed: 'https://github.com/SixFourDev/social-network-api',
     },
     {
       title: 'Weather Dashboard',
@@ -43,10 +43,10 @@ const projectData = [
     },
     {
       title: 'Employee Tracker',
-      description: 'This employee tracker was to allow employers keep track of all departments, roles, and employees.  This app was built using Node.js, Inquirer, and MySQL.',
+      description: 'This employee tracker was to allow employers keep track of all departments, roles, and employees.  This app was built using Node.js, Inquirer, and MySQL. Since this is a back-end application. please visit the Github and clone the repo to test.',
       image: EmployeeTracker,
       github: 'https://github.com/SixFourDev/employee-tracker',
-      deployed: 'Deployed link for Project 6',
+      deployed: 'https://github.com/SixFourDev/employee-tracker',
     },
   ];
   
