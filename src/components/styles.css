@@ -98,15 +98,15 @@ section {
 }
 
 .contact-section {
-  padding: 4rem 0; /* Adjust the top and bottom padding as needed */
+  padding: 4rem 0; 
   background-color: #dad7cd;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center; 
 }
 
 .contact-form {
-  width: 100%; /* Make the form take up the full width */
+  width: 100%; 
   max-width: 500px;
   margin: 0 auto;
 }
@@ -152,6 +152,18 @@ textarea {
   height: auto;
   width: 100%;
 }
+.project-tile {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-tile .github-logo {
+  margin-top: auto;
+}
 
 .github-logo {
   max-width: 30px;
@@ -189,6 +201,32 @@ textarea {
 
 .project-image-container:hover .view-app-text {
   opacity: 1;
+}
+
+.footer {
+  background-color: #dad7cd;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #333;
 }
 
 /* Media query */

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer'
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
@@ -18,6 +19,7 @@ function App() {
             {selectedSection === 'home' && <Home />}
             {selectedSection === 'portfolio' && <Portfolio />}
             {selectedSection === 'contact' && <Contact />}
+            <Footer />
         </div>
     );
 }
