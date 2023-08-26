@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Resume from './pages/Resume';
 
 function App() {
     const [selectedSection, setSelectedSection] = useState('home'); 
@@ -19,6 +20,7 @@ function App() {
             {selectedSection === 'home' && <Home />}
             {selectedSection === 'portfolio' && <Portfolio />}
             {selectedSection === 'contact' && <Contact />}
+            {selectedSection === 'resume' && <Resume />}
             <Footer />
         </div>
     );
